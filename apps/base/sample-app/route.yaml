@@ -3,7 +3,7 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: sample-app
   labels:
-    app: sample-app
+    route: sample-app
 spec:
   to:
     kind: Service

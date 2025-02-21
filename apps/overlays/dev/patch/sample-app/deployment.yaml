@@ -3,15 +3,14 @@ apiVersion: apps/v1
 metadata:
   name: sample-app
   labels:
-    app: dev-sample-app
+    deployment: dev-sample-app
 spec:
   selector:
     matchLabels:
-      deployment: dev-sample-app
+      app: dev-sample-app
   template:
     metadata:
       labels:
-        deployment: dev-sample-app
         app: dev-sample-app
     spec:
       containers:
